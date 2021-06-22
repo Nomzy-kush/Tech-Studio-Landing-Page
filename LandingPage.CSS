@@ -361,6 +361,7 @@ height: 40em;
   position: fixed;
   float: right;
   margin-left: 5em;
+  z-index: 1;
 }
 .first-header {
   font-size: 2em;
