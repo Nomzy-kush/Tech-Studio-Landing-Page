@@ -17,59 +17,53 @@
 .first-section {
   background-color: black;
   color: white;
-  height: 575px;
+  padding: 20px; /* Adjust as needed */
 }
+
 #cola {
-  margin-top: 4.5em;
+  margin-top: 2em;
 }
-.main {
-  margin-bottom;
-}
+
 .coco {
   float: right;
-  padding-right: 9em;
-  }
+  /* padding-right: 2em; */
+}
+
 .caca {
   background-color: white;
-  width: 31em;
-  height: 400px;
-  margin-top: 4em;
+  width: 100%; /* Full width on smaller screens */
+  max-width: 31em; /* Limit width on larger screens */
+  margin-top: 2em;
+  padding: 20px; /* Adjust as needed */
 }
+
 .frm {
-  margin-left: 2em;
-  }
-  .fname {
-    height: 50px;
-  }
-  .lname {
-    height: 50px;
-    margin-left: 30px;
-  }
-  .email {
-    height: 50px;
-    margin-top: 10px;
-    width: 25em;
-  }
-  .phone {
-    height: 50px;
-    width: 25em;
-    margin-top: 20px;
-  }
-  #button {
-    width: 25.5em;
-    height: 50px;
-    margin-left: 30px;
-    margin-top: 20px;
-  }
-  .pargh {
-    color: black;
-    font-size: 20px;
-    padding-top: 30px;
-    font-weight: 20px;
-  }
-  .span {
-    margin-top: 3em;
-  }
+  margin-left: 0; /* Adjust as needed */
+}
+
+.fname,
+.lname,
+.email,
+.phone {
+  width: 100%; /* Full width on smaller screens */
+  margin-top: 10px;
+}
+
+#button {
+  width: 100%; /* Full width on smaller screens */
+  margin-top: 20px;
+}
+
+.pargh {
+  color: black;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.span {
+  margin-top: 1em;
+}
+
   .second-image {
     width: 8em;
     height: 8em;
@@ -173,54 +167,89 @@ height: 40em;
   margin-left: 41em;
 }
 .seventh-image {
-  width: 35em;
-  height: 35em;
-  padding-right: 10px;
+  width: 100%; /* Adjust to fit the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 35em; /* Maximum width */
+  display: block; /* Avoid extra space below the image */
+  margin: 0 auto; /* Center the image */
 }
+
 .seventh-underline {
   background-color: #007BFF;
   width: 3.5em;
   height: 4px;
-  margin-left: 15em;
+  margin: 0 auto; /* Center the underline */
   margin-bottom: 2em;
   margin-top: 5px;
 }
-.seventh-header  {
+
+.seventh-header {
   text-align: center;
   font-size: 30px;
 }
+
 #seventh-div {
-  padding-left: 3em;;
+  padding-left: 0; /* Remove left padding on larger screens */
 }
+
 #div-seventh {
   padding-top: 3em;
   padding-bottom: 5.5em;
 }
-.eight-image {
-  width: 37em;
-  height: 23em;
-  padding-right: 35px;
-  margin-left: 0.5em;
+
+/* Media Query for smaller screens */
+@media (max-width: 767px) {
+  .seventh-image {
+    max-width: 100%; /* Make the image full-width on smaller screens */
+  }
+
+  .seventh-underline {
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
 }
+
+
+.eight-image {
+  width: 100%; /* Adjust as needed */
+  max-width: 37em; /* Maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  padding-right: 0; /* No padding on smaller screens */
+  margin-left: 0; /* No margin on smaller screens */
+}
+
 .eight-header {
   text-align: center;
 }
+
 .eight-underline {
   background-color: #007BFF;
   width: 3.5em;
   height: 4px;
-  margin-left: 40em;
-  margin-bottom: 2em;
+  margin: 0 auto 2em; /* Center and provide bottom margin */
 }
+
 .eight-pargh1 {
   text-align: center;
 }
+
 #eight-pargh2 {
-  padding-left: 3em;
+  padding: 1em; /* Add padding to the entire section */
 }
+
 #eight-button {
   padding: 12px;
 }
+
+@media (max-width: 767px) {
+  .eight-underline {
+    margin-left: 0;
+  }
+
+  #eight-pargh2 {
+    padding-left: 0; /* Remove padding on smaller screens */
+  }
+}
+
 .ninth-section {
   background-color: #f9fafa;
   height: 18em;
@@ -279,7 +308,7 @@ height: 40em;
   background-color: #F9FAFA;
   padding-left: 3.5em;
   padding-top: 2em;
-  height: 45em;
+  height: 55em;
 }
 .eleventh-div2 {
   background-color: #DC3545;
@@ -330,47 +359,53 @@ height: 40em;
   height: 25px;
   margin-right: 0.8em;
 }
-.twelvth-header1 {
+
+.twelvth-header1,
+.twelvth-header2,
+.twelvth-pargh,
+.twelvth-pargh2 {
   font-size: 20px;
   color: white;
   margin-bottom: 1px;
 }
+
 .last-footer {
   padding-top: 2.5em;
   background-color: black;
 }
-.twelvth-header2 {
-  font-size: 20px;
-  color: white;
-  margin-bottom: 1px;
-}
-.last-input {
-  width: 30em;
-  height: 3.5em;
-}
+
+.last-input,
 #last-button {
-  width: 30em;
+  width: 100%; /* Full width on smaller screens */
   height: 3.5em;
+}
+
+#last-button {
   margin-top: 10px;
 }
+
 .last-icons {
   width: 25px;
   height: 25px;
+  background-color: #fff;
+  color: #fff;
 }
-.twelvth-pargh {
-  color: white;
-  margin-bottom: 1px;
-}
+
 #twelvth-header3 {
-  padding-left: 10em;
+  padding-left: 0; /* Reset padding for smaller screens */
 }
-.twelvth-pargh2 {
-  font-size: 20px;
-  color: white;
-}
+
 .last-footer {
-  height: 16em;
+  height: auto; /* Auto height for responsiveness */
 }
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  #twelvth-header3 {
+    padding-left: 0; /* Reset padding for smaller screens */
+  }
+}
+
 .whatsapp-icon {
   width: 60px;
   height: 60px;
